@@ -1,0 +1,27 @@
+<html>
+    <canvas id="myCanvas" width="320" height="548">
+    </canvas>
+    
+    <script>
+        var c=document.getElementById("myCanvas");
+        var ctx=c.getContext("2d");
+        ctx.fillStyle="#FF0000";
+        
+        function drawLoop(offset)
+        {
+            var c=document.getElementById("myCanvas");
+            var ctx=c.getContext("2d");
+            ctx.clearRect(-101,-21, 202,42)
+            ctx.setTransform(1, 0, 0, 1, 0, 0);
+            ctx.translate(c.width / 2.5, c.height / 2.5);
+            ctx.rotate(offset/1.5 * Math.PI/180);
+            ctx.fillRect(0,0,100,20);
+            ctx.fillRect(-100, -20, 100, 20);
+        }
+        
+        function loopLength()
+        {
+            return 10548;
+        }
+    </script>
+</html>

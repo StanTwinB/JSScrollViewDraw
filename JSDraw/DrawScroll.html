@@ -1,0 +1,21 @@
+<html>
+    <script>
+        
+        function drawLoop(offset)
+        {
+            heading = document.getElementById("moveme");
+            heading.style.left = offset;
+            return offset;
+        }
+        function loopLength()
+        {
+            return window.innerWidth - 60;
+        }
+        
+    </script>
+    
+    <body>
+        <h1>Title stays put</h1>
+        <div id="moveme" style="position:absolute;font-size:x-large;word-wrap:break-word">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae turpis nec eros lacinia auctor.</div></body>
+</html>
+
